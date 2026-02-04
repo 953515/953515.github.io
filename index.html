@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DIVYA A J - Running Name</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 50px 20px;
+            font-family: sans-serif;
+            background: radial-gradient(circle at top left, #2c3e50, #000000);
+            background-attachment: fixed;
+            color: #ecf0f1;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        .profile-pic {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 3px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        /* The Marquee (Running) Logic */
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 10px 0;
+            margin: 20px 0;
+        }
+
+        .moving-name {
+            display: inline-block;
+            white-space: nowrap;
+            animation: marquee 8s linear infinite; /* Speed: 8 seconds */
+            color: #3498db;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 30px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="me.webp" alt="DIVYA A J" class="profile-pic">
+
+    <div class="marquee-container">
+        <h1 class="moving-name">DIVYA A J</h1>
+    </div>
+
+    <p><i>Aspiring Computer Science Professional</i></p>
+
+    <div class="glass-card">
+        <h2 style="color: #3498db;">About Me</h2>
+        <p>Hello! I am a student passionate about technology and software development. My goal is to become a high achiever in the Computer Science field.</p>
+        
+        <h2 style="color: #3498db;">My Goals</h2>
+        <ul>
+            <li>Master web development.</li>
+            <li>Contribute to open-source on GitHub.</li>
+            <li>Build clean, efficient code.</li>
+        </ul>
+    </div>
+
+</body>
+</html>
