@@ -1,17 +1,81 @@
-<!DOCTYPE html>
-<html><!DOCTYPE html>
-<html lang="en">
+<<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DIVYA A J - Personal Website</title>
+    <title>DIVYA A J - Portfolio</title>
     <style>
-        /* This creates the unique gradient background */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+            margin: 0;
+            padding: 50px 20px;
+            font-family: sans-serif;
+            /* Unique Professional Background */
+            background: radial-gradient(circle at top left, #2c3e50, #000000);
             background-attachment: fixed;
-            color: white;
+            color: #ecf0f1;
+            text-align: center;
+        }
+
+        .profile-pic {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 3px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        /* The Animation for your name */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .moving-name {
+            display: inline-block;
+            animation: float 3s ease-in-out infinite;
+            color: #3498db; /* Professional Blue */
+            font-size: 2.5rem;
+            margin: 10px 0;
+        }
+
+        .about-container {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            text-align: left;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="me.webp" alt="DIVYA A J" class="profile-pic">
+
+    <div>
+        <h1 class="moving-name">DIVYA A J</h1>
+    </div>
+    
+    <p><i>Aspiring Computer Science Professional</i></p>
+
+    <div class="about-container">
+        <h2 style="color: #3498db;">About Me</h2>
+        <p>Hello! I am a student passionate about technology and software development. My goal is to become a high achiever in the Computer Science field.</p>
+        
+        <h2 style="color: #3498db;">My Goals</h2>
+        <ul>
+            <li>Master web development.</li>
+            <li>Contribute to open-source on GitHub.</li>
+            <li>Build clean, efficient code.</li>
+        </ul>
+    </div>
+
+</body>
+</html>
+
             text-align: center;
             padding: 40px 20px;
             margin: 0;
