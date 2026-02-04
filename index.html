@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html>
 <head>
     <title>DIVYA A J - Portfolio</title>
@@ -7,22 +7,59 @@
             margin: 0;
             padding: 50px 20px;
             font-family: sans-serif;
-            /* Unique Professional Background */
             background: radial-gradient(circle at top left, #2c3e50, #000000);
             background-attachment: fixed;
             color: #ecf0f1;
             text-align: center;
         }
-
         .profile-pic {
             width: 180px;
             height: 180px;
             border-radius: 50%;
-  about-container">
+            border: 3px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        .moving-name {
+            display: inline-block;
+            animation: float 3s ease-in-out infinite;
+            color: #3498db;
+            font-size: 2.5rem;
+            margin: 10px 0;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 30px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <img src="me.webp" alt="DIVYA A J" class="profile-pic">
+    <div>
+        <h1 class="moving-name">DIVYA A J</h1>
+    </div>
+    <p><i>Aspiring Computer Science Professional</i></p>
+    <div class="glass-card">
         <h2 style="color: #3498db;">About Me</h2>
-        <p>Hello! I am a student passionate about technology and software development. My goal is to become ona high achiever in the Computer Science field.</p>
-        
+        <p>Hello! I am a student passionate about technology and software development. My goal is to become a high achiever in the Computer Science field.</p>
         <h2 style="color: #3498db;">My Goals</h2>
         <ul>
             <li>Master web development.</li>
-            <li>Contribute to open-source 
+            <li>Contribute to open-source on GitHub.</li>
+            <li>Build clean, efficient code.</li>
+        </ul>
+    </div>
+</body>
+</html>
